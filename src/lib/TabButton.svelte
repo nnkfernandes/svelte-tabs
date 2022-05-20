@@ -1,0 +1,42 @@
+
+
+<script lang="ts">
+
+   export let onClick: () => void;
+   
+</script>
+
+<button on:click={onClick}>
+    <slot/>
+</button>
+
+<style>
+
+button {
+    width: 112px;
+    height: 32px;
+
+    background: #CCCCCC;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+/* .active {
+    background: #AAAAAA;
+    font-weight: bold;
+} */
+
+</style>
